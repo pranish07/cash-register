@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+input {
+  margin: 10px 0 10px 0;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 20px;
+}
+table {
+  border-collapse: collapse;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #f2f2f2;
+  padding: 0 40px 30px 40px;
+  position: relative;
+  top: 20px;
+  border-radius: 20px;
+}
+
+#bill-amount,
+#cash-amount {
+  width: 400px;
+  height: 40px;
+}
+#check-button,
+#next-button {
+  width: 20%;
+  height: 35px;
+  background-color: green;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+/* view */
+.view label,
+.open-check label {
+  font-size: 20px;
+  font-weight: bold;
+}
