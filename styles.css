@@ -1,5 +1,8 @@
+
+
 * {
   box-sizing: border-box;
+  margin:0;
 }
 input {
   margin: 10px 0 10px 0;
@@ -17,14 +20,12 @@ table {
 .container {
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 600px;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 2rem auto;
   background-color: #f2f2f2;
-  padding: 0 40px 30px 40px;
-  position: relative;
-  top: 20px;
+  padding-top:1rem;
   border-radius: 20px;
 }
 
@@ -43,10 +44,42 @@ table {
   align-items: center;
   justify-content: center;
   margin: auto;
+  border:0;
+  color:white;
+  cursor:pointer;
+}
+.open-table{
+  /* width:90%; */
+  /* margin:auto; */
+  padding:1.5rem;
 }
 /* view */
 .view label,
 .open-check label {
   font-size: 20px;
   font-weight: bold;
+}
+.view p{
+  margin:1rem 0;
+} 
+.heading{
+  text-align:center;
+}
+@media only screen and (max-width: 500px){
+.container,.view,.open-check{
+  width:95%;
+  margin:auto;
+}
+
+.open-table{
+  margin:1rem 0;
+  padding:0;
+}
+table,th,td{
+  padding:.4rem;
+}
+#bill-amount,#cash-amount{
+  width:100%;
+  /* margin:1rem; */
+}
 }
